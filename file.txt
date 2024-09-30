@@ -1,3 +1,0 @@
-feature/dev -> dev
-deveop -> qa
-release -> preprod
