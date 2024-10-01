@@ -5,8 +5,9 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket   = "tcw-terrafomr-state-lock"
-    key      = "${var.env}/s3-bucket/terraform.tfstate"
+    key      = "dev/s3-bucket/terraform.tfstate"
     region   = "us-east-1"
+    encrypt        = true
   }
 }
 
