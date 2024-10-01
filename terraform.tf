@@ -23,7 +23,7 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tcw-tf-00000-test-bucket"
+  bucket = "my-tcw-tf-00000-${var.env}-test-bucket"
 
   tags = {
     Name        = "My bucket"
